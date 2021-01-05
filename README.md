@@ -113,6 +113,15 @@ npm run build
 
 使用 ORM 工具 Sequelize 來操作資料庫
 
+### sequelize-cli
+
+快速生成 migrate 和 models 檔案
+
+### concurrently
+
+使前後端伺服器同時運行
+
+
 ## API 文件
 
 [詳細 API 文件參考連結](https://hackmd.io/lkiEaF1ES6aAol_rvb-WcA?view)
