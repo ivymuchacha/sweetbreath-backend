@@ -49,7 +49,7 @@ SECRET=''
 ## 開發
 
 ```
-npm run start
+npm run server
 ```
 
 ## 部屬
@@ -112,6 +112,15 @@ npm run build
 ### sequelize
 
 使用 ORM 工具 Sequelize 來操作資料庫
+
+### sequelize-cli
+
+快速生成 migrate 和 models 檔案
+
+### concurrently
+
+使前後端伺服器同時運行
+
 
 ## API 文件
 
