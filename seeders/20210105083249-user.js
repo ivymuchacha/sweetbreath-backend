@@ -16,6 +16,8 @@ module.exports = {
           is_admin: true,
           status: true,
           socialmedia_id: null,
+          createdAt: new Date(),
+          updatedAt: new Date(),
         },
         {
           username: "QQQ",
@@ -28,6 +30,8 @@ module.exports = {
           is_admin: false,
           status: true,
           socialmedia_id: null,
+          createdAt: new Date(),
+          updatedAt: new Date(),
         },
         {
           username: "Ken",
@@ -40,6 +44,8 @@ module.exports = {
           is_admin: false,
           status: true,
           socialmedia_id: null,
+          createdAt: new Date(),
+          updatedAt: new Date(),
         },
       ],
       {}

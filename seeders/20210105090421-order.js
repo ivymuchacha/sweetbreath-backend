@@ -19,6 +19,8 @@ module.exports = {
           is_cancel: null,
           status: null,
           total: 270,
+          createdAt: new Date(),
+          updatedAt: new Date(),
         },
         {
           UserId: 3,
@@ -34,6 +36,8 @@ module.exports = {
           is_cancel: null,
           status: null,
           total: 860,
+          createdAt: new Date(),
+          updatedAt: new Date(),
         },
       ],
       {}
