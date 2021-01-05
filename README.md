@@ -39,12 +39,12 @@ Sweet Breath 甜之呼吸的後端原始碼，採用 Express 和 Sequelize 開�
 3. 建立環境變數 .env，格式為：
 
 ```
-SECRET=''
+JWT_SECRET=''
 ```
 
 4. 輸入指令 npm run migrate 以執行 Sequelize migration，在 MySQL 資料庫中建立 database 及 table。
 
-5. 輸入指令 npm run get-test-data 以執行 Sequelize seeders 以在資料庫中建立初始 demo 資料。
+5. 輸入指令 npm run get-demo-data 以執行 Sequelize seeders 以在資料庫中建立初始 demo 資料。
 
 ## 開發
 
@@ -88,6 +88,8 @@ npm run build
 +---node_modules
 |
 +---migrations                // Sequelize migrations
+|       
+\---seeders                   // Sequelize seeders
 
 ```
 
