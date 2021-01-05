@@ -49,7 +49,7 @@ SECRET=''
 ## 開發
 
 ```
-npm run start
+npm run server
 ```
 
 ## 部屬
