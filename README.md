@@ -1,1 +1,122 @@
 # Sweet Breath 甜之呼吸-Backend
+
+## 簡介
+
+Sweet Breath 甜之呼吸的後端原始碼，採用 Express 和 Sequelize 開發，生成 API 與前端串連。
+
+## 建置
+
+1. 執行 npm install 安裝此專案所需的第三方套件
+
+2. 新增 config/config.json，格式為：
+
+```
+{
+  "development": {
+    "username": "test",
+    "password": "test",
+    "database": "test",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "test",
+    "password": "test",
+    "database": "test",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "test",
+    "password": "test",
+    "database": "test",
+    "host": "localhost",
+    "dialect": "mysql",
+  }
+}
+```
+
+3. 建立環境變數 .env，格式為：
+
+```
+SECRET=''
+```
+
+4. 輸入指令 npm run migrate 以執行 Sequelize migration，在 MySQL 資料庫中建立 database 及 table。
+
+5. 輸入指令 npm run get-test-data 以執行 Sequelize seeders 以在資料庫中建立初始 demo 資料。
+
+## 開發
+
+```
+npm run start
+```
+
+## 部屬
+
+```
+npm run build
+```
+
+## 專案架構
+
+```
+|   server.js                 // App 伺服器入口點
+|   package.json
+|   package-lock.json
+|   README.md
+|
++---config
+|     config.json            // Sequelize 設定檔
+|
++---controllers              // 處理 API 邏輯
+|     user.js
+|     product.js
+|     category.js
+|     feature.js
+|     order.js
+|
++---models                   // 透過 Sequelize 和資料庫溝通
+|     index.js
+|     user.js
+|     product.js
+|     category.js
+|     feature.js
+|     orderitems.js
+|     order.js
+|
++---node_modules
+|
++---migrations                // Sequelize migrations
+
+```
+
+## 使用的第三方 library
+
+### bcrypt
+
+使用此套件將密碼加密後再存入資料庫
+
+### dotenv
+
+使用此套件設置環境變數
+
+### jsonwebtoken
+
+使用 JWT 來實作登入機制驗證
+
+### mysql2
+
+使用 mysql2 連線資料庫
+
+### sequelize
+
+使用 ORM 工具 Sequelize 來操作資料庫
+
+## API 文件
+
+[詳細 API 文件參考連結](https://hackmd.io/lkiEaF1ES6aAol_rvb-WcA?view)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
