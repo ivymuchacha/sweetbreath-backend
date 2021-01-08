@@ -123,6 +123,8 @@ npm run build
 
 使前後端伺服器同時運行
 
+## 資料庫結構
+![資料庫結構](https://imgur.com/lgpHM2P.png)
 
 ## API 文件
 
