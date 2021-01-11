@@ -4,6 +4,15 @@
 
 Sweet Breath 甜之呼吸的後端原始碼，採用 Express 和 Sequelize 開發，生成 API 與前端串連。
 
+## DEMO
+
+[API 連結](https://sweetbreath-backend.herokuapp.com/)
+
+## API 文件
+
+[詳細 API 文件參考連結](https://hackmd.io/lkiEaF1ES6aAol_rvb-WcA?view)
+
+
 ## 建置
 
 1. 執行 npm install 安裝此專案所需的第三方套件
@@ -125,10 +134,6 @@ npm run build
 
 ## 資料庫結構
 ![資料庫結構](https://imgur.com/lgpHM2P.png)
-
-## API 文件
-
-[詳細 API 文件參考連結](https://hackmd.io/lkiEaF1ES6aAol_rvb-WcA?view)
 
 ## License
 
