@@ -18,7 +18,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          CategoryId: 2,
+          CategoryId: 11,
           name: "磅蛋糕",
           image: "https://imgur.com/HcqDbdB.jpg",
           info: `牛油、砂糖、雞蛋、麵粉各取一磅(pound)，混合成麵糊，烤作蛋糕，就是「磅蛋糕」名字的由來。
@@ -34,7 +34,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          CategoryId: 2,
+          CategoryId: 11,
           name: "巧克力磅蛋糕",
           image: "https://imgur.com/VMttCTQ.jpg",
           info: `磅蛋糕，又叫奶油蛋糕，這是一種非常常見的蛋糕，濃郁奶香與紮實口感是一大特色。

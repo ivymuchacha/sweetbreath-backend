@@ -1,4 +1,4 @@
-require("dotenv").config({ path: `../.env` });
+require("dotenv").config({ path: "../.env" });
 const db = require("../models");
 const Orders = db.Orders;
 const OrderItem = db.OrderItem;
@@ -256,7 +256,7 @@ const orderController = {
             .then((result) => {
               return res.status(200).send({
                 ok: 1,
-                message: "編輯會員資料完成",
+                message: "編輯訂單資料完成",
                 result,
               });
             })

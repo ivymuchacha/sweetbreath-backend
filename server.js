@@ -1,16 +1,18 @@
 require("dotenv").config();
 const express = require("express");
+const cors = require("cors");
+const bodyParser = require("body-parser");
 const app = express();
 const port = process.env.PORT || 5000;
-const bodyParser = require("body-parser");
-const userControlloer = require("./controllers/user");
+const userController = require("./controllers/user");
 const productController = require("./controllers/product");
 const categoryController = require("./controllers/category");
 const featureController = require("./controllers/feature");
 const orderController = require("./controllers/order");
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cors());
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 function checkAuthorization(req, res) {
   const authorization = req.header("Authorization");
@@ -24,13 +26,13 @@ function checkAuthorization(req, res) {
 }
 
 // user
-app.post("/register", userControlloer.register); // 註冊
-app.post("/login", userControlloer.login); // 登入
-app.get("/me", userControlloer.getMe, checkAuthorization); // 驗證
-app.get("/user", userControlloer.getUser, checkAuthorization); // 會員撈取個人資料
-app.put("/user", userControlloer.editUser, checkAuthorization); // 會員編輯個人資料
-app.get("/users", userControlloer.admin, checkAuthorization); // 管理員撈取會員資料
-app.put("/users/:id", userControlloer.adminEditUsers, checkAuthorization); // 管理員編輯會員權限
+app.post("/register", userController.register); // 註冊
+app.post("/login", userController.login); // 登入
+app.get("/me", userController.getMe, checkAuthorization); // 驗證
+app.get("/user", userController.getUser, checkAuthorization); // 會員撈取個人資料
+app.put("/user", userController.editUser, checkAuthorization); // 會員編輯個人資料
+app.get("/users", userController.admin, checkAuthorization); // 管理員撈取會員資料
+app.put("/users/:id", userController.adminEditUsers, checkAuthorization); // 管理員編輯會員權限
 
 //product
 app.get("/products", productController.getProducts); // 撈取產品

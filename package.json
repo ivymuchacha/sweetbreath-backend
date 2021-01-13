@@ -1,23 +1,22 @@
 {
-  "name": "sweetbreath-backend",
+  "name": "sweetbreath-second",
   "version": "1.0.0",
   "description": "## 簡介",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "server": "nodemon server.js",
-    "dev": "concurrently  \"npm run start\" \"npm run server\"",
-    "try": "echo \"Error: no test specified\" && exit 1",
-    "migrate": "npx sequelize-cli db:migrate",
-    "migrate-undo": "npx sequelize-cli db:migrate:undo",
-    "get-demo-data": "npx sequelize-cli db:seed:all",
-    "build": "npm run migrate && npm run get-demo-data && npm run server"
+    "db:migrate": "npx sequelize db:migrate",
+    "get-demo-data": "npx sequelize-cli db:seed:all"
+  },
+  "engines": {
+    "node": "12.x"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "http-proxy-middleware": "^0.19.1",

@@ -12,7 +12,6 @@ Sweet Breath 甜之呼吸的後端原始碼，採用 Express 和 Sequelize 開�
 
 [詳細 API 文件參考連結](https://hackmd.io/lkiEaF1ES6aAol_rvb-WcA?view)
 
-
 ## 建置
 
 1. 執行 npm install 安裝此專案所需的第三方套件
@@ -40,7 +39,7 @@ Sweet Breath 甜之呼吸的後端原始碼，採用 Express 和 Sequelize 開�
     "password": "test",
     "database": "test",
     "host": "localhost",
-    "dialect": "mysql",
+    "dialect": "mysql"
   }
 }
 ```
@@ -97,7 +96,7 @@ npm run build
 +---node_modules
 |
 +---migrations                // Sequelize migrations
-|       
+|
 \---seeders                   // Sequelize seeders
 
 ```
@@ -111,6 +110,10 @@ npm run build
 ### dotenv
 
 使用此套件設置環境變數
+
+### cors
+
+使用 cors 套件解決跨來源資源共用
 
 ### jsonwebtoken
 
@@ -133,7 +136,14 @@ npm run build
 使前後端伺服器同時運行
 
 ## 資料庫結構
+
 ![資料庫結構](https://imgur.com/lgpHM2P.png)
+
+### 專案前端技術
+
+「Sweet Breath 甜の呼吸 - 網路甜點工作室」前端原始碼，採用前端技術 React Hooks 進行開發。
+
+- 專案連結： [sweetbreath](https://github.com/corekang/sweetbreath)
 
 ## License
 

@@ -6,7 +6,7 @@ module.exports = {
       "Orders",
       [
         {
-          UserId: 2,
+          UserId: 11,
           order_number: 160976576433222,
           buyer_fullname: "安安",
           buyer_email: "AnnAnn@AnnAnn.com",
@@ -23,7 +23,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          UserId: 3,
+          UserId: 21,
           order_number: 16097654685362,
           buyer_fullname: "肯肯肯",
           buyer_email: "ken@kenken.com",

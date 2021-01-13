@@ -16,7 +16,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          ProductId: 2,
+          ProductId: 11,
           name: "4 吋",
           stock: 5,
           price: 400,
@@ -26,7 +26,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          ProductId: 3,
+          ProductId: 21,
           name: "4 吋",
           stock: 5,
           price: 400,
@@ -36,7 +36,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          ProductId: 4,
+          ProductId: 31,
           name: "2 入",
           stock: 5,
           price: 80,
@@ -46,7 +46,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          ProductId: 5,
+          ProductId: 41,
           name: "4 吋",
           stock: 2,
           price: 500,
@@ -56,7 +56,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          ProductId: 6,
+          ProductId: 51,
           name: "1 入",
           stock: 10,
           price: 120,

@@ -18,7 +18,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          OrderId: 2,
+          OrderId: 11,
           order_number: 16097654685362,
           product_id: 1,
           product_image: "https://imgur.com/lxWa1BS.png",
@@ -30,9 +30,9 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          OrderId: 2,
+          OrderId: 11,
           order_number: 16097654685362,
-          product_id: 4,
+          product_id: 31,
           product_image: "https://imgur.com/YNICHSc.jpg",
           product_name: "可可貝果",
           product_feature: "2 入",
