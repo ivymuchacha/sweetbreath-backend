@@ -40,7 +40,7 @@ Sweet Breath 甜之呼吸的後端原始碼，採用 Express 和 Sequelize 開�
     "password": "test",
     "database": "test",
     "host": "localhost",
-    "dialect": "mysql",
+    "dialect": "mysql"
   }
 }
 ```
@@ -111,6 +111,10 @@ npm run build
 ### dotenv
 
 使用此套件設置環境變數
+
+### cors
+
+使用 cors 套件解決跨來源資源共用
 
 ### jsonwebtoken
 
